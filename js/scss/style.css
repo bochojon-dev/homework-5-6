@@ -10,18 +10,30 @@
   max-width: 1440px;
 }
 
-header #header1 .nav-contents {
+header #header1 {
   background-color: #131921;
+}
+header #header1 .nav-contents {
   color: #fff;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
   justify-content: center;
 }
 header #header1 .nav-contents .uzb {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 2px;
+}
+header #header1 .nav-contents .input input {
+  width: 300px;
+  outline: none;
+}
+header #header1 .nav-contents input ::-moz-placeholder {
+  padding: 8px 0;
+}
+header #header1 .nav-contents input ::placeholder {
+  padding: 8px 0;
 }
 header #header1 .nav-contents .language {
   display: flex;
@@ -30,15 +42,78 @@ header #header1 .nav-contents .language {
 header #header1 .nav-contents .cart {
   display: flex;
 }
+header #header2 {
+  background-color: #232f3e;
+}
 header #header2 .head-contents {
   display: flex;
   align-items: center;
   gap: 20px;
-  background-color: #232f3e;
   color: #fff;
 }
 header #header2 .head-contents .menu {
   display: flex;
   align-items: center;
   gap: 3px;
+}
+
+main #model {
+  width: 400px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  display: none;
+  z-index: 100;
+}
+main #model .choose {
+  background-color: aquamarine;
+}
+main #model .done {
+  background-color: #fff;
+}
+main .main .main-contents {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-image: url(../../images/bx-location-plus.svg);
+}
+main .main .main-contents .card-contents {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+main .main .main-contents .arrow-right {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+}
+main .main .main-contents .arrow-left {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+
+footer .sidebar {
+  position: relative;
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  background: crimson;
+  transition: 0.4s;
+}
+footer .sidebar .btn-close {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  z-index: 100;
+  display: none;
+}
+footer .sidebar.show {
+  left: 0;
 }/*# sourceMappingURL=style.css.map */

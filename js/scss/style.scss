@@ -11,8 +11,37 @@
 header {
   #header1 {
     .nav-contents {
+      background-color: #131921;
+      color: #fff;
       display: flex;
       align-items: center;
+      gap: 30px;
+      justify-content: center;
+      .uzb {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .language {
+        display: flex;
+        align-items: center;
+      }
+      .cart {
+        display: flex;
+      }
+    }
+  }
+  #header2 {
+    .head-contents {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background-color: #232f3e;
+      color: #fff;
+      .menu {
+        display: flex;
+        align-items: center;
+        gap: 3px;
       }
     }
   }
